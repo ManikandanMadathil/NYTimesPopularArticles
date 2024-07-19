@@ -5,6 +5,12 @@
 
 This project is a simple React application that displays the most popular articles from the NY Times API. It features a master/detail view where users can see a list of articles and view details of a selected article.
 
+<img width="933" alt="image" src="https://github.com/user-attachments/assets/2b8f7252-f5c8-4370-8129-664296f3d3d8">
+
+<img width="953" alt="image" src="https://github.com/user-attachments/assets/91b03997-cb99-4877-82d1-56d880d2b7f9">
+
+
+
 ### Features
 
 - **Master/Detail View:** List of articles with the ability to view detailed information when an article is selected.
