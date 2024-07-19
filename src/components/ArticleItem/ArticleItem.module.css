@@ -1,0 +1,38 @@
+
+.articleItem {
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin: 16px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .articleItem:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .articleTitle {
+    font-size: 1.5em;
+    margin: 0;
+  }
+  
+  .articleByline {
+    color: #555;
+    font-size: 0.9em;
+  }
+  
+  .readMoreButton {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 8px;
+  }
+  
+  .readMoreButton:hover {
+    background-color: #0056b3;
+  }
+  

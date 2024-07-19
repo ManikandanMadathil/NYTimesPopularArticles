@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import ArticleDetail from '../components/ArticleDetail';
+import ArticleDetail from '../components/ArticleDetails/ArticleDetail';
 import { Article } from '../services/ArticleService';
 
 
