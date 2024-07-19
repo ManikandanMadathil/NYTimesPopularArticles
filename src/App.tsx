@@ -1,29 +1,18 @@
-import React, { useEffect, useState } from 'react';
-import ArticleList from './components/ArticleList';
-import ArticleService, { Article } from './services/ArticleService';
+import React from 'react';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import Home from './containers/Home/Home';
+import ArticleDetail from './components/ArticleDetails/ArticleDetail';
 
 const App: React.FC = () => {
-  const [articles, setArticles] = useState<Article[]>([]);
-
-  useEffect(() => {
-    const articleService = new ArticleService();
-    const fetchArticles = async () => {
-      try {
-        const articles = await articleService.getArticles();
-        setArticles(articles);
-      } catch (error) {
-        console.error('Error fetching articles:', error);
-      }
-    };
-
-    fetchArticles();
-  }, []);
-
   return (
-    <div>
-      <h1>NY Times Most Popular Articles</h1>
-      <ArticleList articles={articles}/>
-    </div>
+
+    <Router>
+      <Routes>
+        <Route path="/"  element={<Home/>} />
+        <Route path="/article/:id" element={<ArticleDetail/>} />
+      </Routes>
+    </Router>
+
   );
 };
 

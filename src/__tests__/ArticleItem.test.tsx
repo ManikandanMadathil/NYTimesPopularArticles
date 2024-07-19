@@ -1,7 +1,7 @@
 
 import '@testing-library/jest-dom';
 import { fireEvent, render, screen } from '@testing-library/react';
-import ArticleItem from '../components/ArticleItem';
+import ArticleItem from '../components/ArticleItem/ArticleItem';
 import { Article } from '../services/ArticleService';
 
 const article: Article = {

@@ -1,0 +1,36 @@
+
+.articleDetails {
+    padding: 16px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .articleTitle {
+    font-size: 2em;
+    margin-bottom: 8px;
+  }
+  
+  .articleByline {
+    color: #555;
+    font-size: 0.9em;
+    margin-bottom: 16px;
+  }
+  
+  .articleAbstract {
+    font-size: 1.2em;
+    margin-bottom: 16px;
+  }
+  
+  .readMoreLink {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .readMoreLink:hover {
+    background-color: #0056b3;
+  }
+  
