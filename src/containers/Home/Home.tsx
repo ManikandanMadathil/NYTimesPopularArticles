@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import ArticleList from '../../components/ArticleList';
-import ArticleService, { Article } from '../../services/ArticleService';
-import styles from './Home.module.css'
+import ArticleList from '../../components/ArticleList/ArticleList';
+import ArticleService, { ArticleResponse } from '../../services/ArticleService';
+import styles from './Home.module.css';
 
 const Home: React.FC = () => {
-  const [articles, setArticles] = useState<Article[]>([]);
+  const [articles, setArticles] = useState<ArticleResponse[]>([]);
 
   useEffect(() => {
     const articleService = new ArticleService();

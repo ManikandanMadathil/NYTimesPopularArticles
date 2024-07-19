@@ -10,6 +10,7 @@ This project is a simple React application that displays the most popular articl
 - **Master/Detail View:** List of articles with the ability to view detailed information when an article is selected.
 - **API Integration:** Fetches data from the NY Times Most Popular Articles API.
 - **Testing:** Includes unit tests with Jest and React Testing Library, and UI tests with Cypress.
+-**Linting:** Includes linting to find code problems
 
 ## Setup
 
@@ -54,13 +55,13 @@ This project is a simple React application that displays the most popular articl
 To start the development server:
 
 ```bash
-npm run dev
+npm run start
 ```
 
 or
 
 ```bash
-yarn dev
+yarn start
 ```
 
 Navigate to `http://localhost:3000` in your browser to view the application.
@@ -70,7 +71,7 @@ Navigate to `http://localhost:3000` in your browser to view the application.
 - **Unit Tests:**
 
   ```bash
-  npm test
+  npm run test
   ```
 
   or

@@ -1,25 +1,18 @@
 import '@testing-library/jest-dom';
 import { render, screen } from '@testing-library/react';
-import ArticleList from '../components/ArticleList';
-import { Article } from '../services/ArticleService';
+import { mockResponse } from '../__mocks__/axios';
+import ArticleList from '../components/ArticleList/ArticleList';
+import { ArticleResponse } from '../services/ArticleService';
+
+const mockedUseNavigate = jest.fn();
+ 
+jest.mock('react-router', () => ({
+   ...jest.requireActual('react-router') as any,
+  useNavigate: () => mockedUseNavigate,
+}));
 
 
-const articles: Article[] = [
-  {
-    id: 1,
-    title: 'Test Article 1',
-    byline: 'Byline 1',
-    abstract: 'Abstract 1',
-    url: 'https://example.com/1',
-  },
-  {
-    id: 2,
-    title: 'Test Article 2',
-    byline: 'Byline 2',
-    abstract: 'Abstract 2',
-    url: 'https://example.com/2',
-  },
-];
+const articles: ArticleResponse[] = mockResponse.data.results
 
 describe('ArticleList', () => {
   it('renders a list of articles', () => {
