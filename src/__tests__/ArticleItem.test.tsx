@@ -10,6 +10,7 @@ const article: Article = {
   byline: 'Test Byline',
   abstract: 'Test Abstract',
   url: 'https://nagarro.com',
+  imageUrl:""
 };
 
 describe('ArticleItem', () => {

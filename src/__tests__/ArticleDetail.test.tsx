@@ -9,11 +9,12 @@ const mockArticle: Article = {
   byline: 'By Author',
   abstract: 'Abstract of sample article.',
   url: 'http://nagarro.com',
+  imageUrl:""
 };
 
 describe('ArticleDetail', () => {
   it('renders article details', () => {
-    render(<ArticleDetail article={mockArticle} />);
+    render(<ArticleDetail />);
     
     expect(screen.getByText('Sample Article')).toBeInTheDocument();
     expect(screen.getByText('By Author')).toBeInTheDocument();
