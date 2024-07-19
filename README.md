@@ -136,6 +136,7 @@ Navigate to `http://localhost:3000` in your browser to view the application.
 
 - **`src/`**: Contains all the source code.
   - **`components/`**: Contains React components.
+  - **`containers/`**: Contains React containers.
   - **`services/`**: Contains service classes for API calls.
   - **`App.tsx`**: Main application component.
   - **`index.tsx`**: Entry point of the application.
