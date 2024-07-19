@@ -13,7 +13,7 @@ class ArticleService {
     private baseUrl: string;
   
     constructor(){
-        this.apiKey = import.meta.env.VITE_NYT_API_KEY ?? '';
+        this.apiKey = process.env.REACT_APP_API_KEY ?? '';
         this.baseUrl = 'https://api.nytimes.com/svc/mostpopular/v2/viewed/1.json';
     }
 

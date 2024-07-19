@@ -2,6 +2,8 @@ import { render, screen } from '@testing-library/react';
 import ArticleDetail from '../components/ArticleDetail';
 import { Article } from '../services/ArticleService';
 
+jest.mock("axios")
+
 const mockArticle: Article = {
   id: 1,
   title: 'Sample Article',
@@ -17,6 +19,5 @@ describe('ArticleDetail', () => {
     expect(screen.getByText('Sample Article')).toBeInTheDocument();
     expect(screen.getByText('By Author')).toBeInTheDocument();
     expect(screen.getByText('Abstract of sample article.')).toBeInTheDocument();
-
   });
 });

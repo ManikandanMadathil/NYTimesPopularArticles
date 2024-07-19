@@ -1,8 +1,10 @@
-import { describe,it,expect} from "vitest";
+import React from 'react';
+import { render, screen } from '@testing-library/react';
+import App from './App';
 
-describe("",()=>{
-    it("",()=>{
-        expect(false).toBeTruthy()
-    })
-    
-})
+
+jest.mock("axios")
+
+test('renders app', () => {
+  render(<App />);
+});
