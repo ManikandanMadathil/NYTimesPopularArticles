@@ -44,7 +44,7 @@ This project is a simple React application that displays the most popular articl
    Create a `.env` file in the root directory of the project and add your NY Times API key:
 
    ```env
-   VITE_NYTIMES_API_KEY=your-api-key
+   REACT_APP_API_KEY=your-api-key
    ```
 
    Replace `your-api-key` with your actual NY Times API key.
@@ -63,7 +63,7 @@ or
 yarn dev
 ```
 
-Navigate to `http://localhost:5173` in your browser to view the application.
+Navigate to `http://localhost:3000` in your browser to view the application.
 
 ### Running Tests
 
@@ -141,6 +141,5 @@ Navigate to `http://localhost:5173` in your browser to view the application.
   - **`index.tsx`**: Entry point of the application.
 - **`__tests__/`**: Contains test files.
 - **`.env`**: Environment variables.
-- **`jest.config.ts`**: Jest configuration file.
 - **`tsconfig.json`**: TypeScript configuration file.
 
