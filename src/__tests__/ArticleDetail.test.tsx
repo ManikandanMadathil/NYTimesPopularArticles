@@ -2,7 +2,6 @@ import { render, screen } from '@testing-library/react';
 import ArticleDetail from '../components/ArticleDetail';
 import { Article } from '../services/ArticleService';
 
-jest.mock("axios")
 
 const mockArticle: Article = {
   id: 1,
