@@ -26,7 +26,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint --config eslint.config.mjs .",
-    "test:coverage": "react-scripts test --coverage"
+    "test:coverage": "react-scripts test --coverage --watchAll"
   },
   "eslintConfig": {
     "extends": [
