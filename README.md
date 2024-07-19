@@ -15,7 +15,7 @@ This project is a simple React application that displays the most popular articl
 
 - **Master/Detail View:** List of articles with the ability to view detailed information when an article is selected.
 - **API Integration:** Fetches data from the NY Times Most Popular Articles API.
-- **Testing:** Includes unit tests with Jest and React Testing Library, and UI tests with Cypress.
+- **Testing:** Includes unit tests with Jest and React Testing Library.
 -**Linting:** Includes linting to find code problems
 
 ## Setup
